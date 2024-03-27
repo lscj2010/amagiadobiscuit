@@ -237,7 +237,7 @@ button, textarea, input {
   font-size: var(--large-font-size);
 }
 .home__subtitle {
-  font-family: var(--second-color);
+  font-family: var(--second-font);
   font-weight: var(--weight-600);
   margin-bottom: 1rem;
   display: block;
@@ -275,6 +275,11 @@ button, textarea, input {
 .btn:hover {
   background-color: transparent;
   color: var(--first-color);
+}
+.btn--md {
+  font-family: var(--body-font);
+  height: 45px;
+  line-height: 42px;
 }
 /*=============== CATEGORIES ===============*/
 .categories {
@@ -520,7 +525,46 @@ button, textarea, input {
 }
 .deals__price .new__price {
   color: hsl(352, 100%, 60%);
-}02:38:10
+}
+.deals__countdown-text {
+  margin-bottom: 0.25rem;
+}
+.countdown {
+  display: flex;
+  column-gap: 1.5rem;
+}
+.countdown__amount {
+  position: relative;
+}
+.countdown__amount::after {
+  content: ':';
+  color: var(--title-color);
+  font-size: var(--large-font-size);
+  position: absolute;
+  right: -25%;
+  top: 20%;
+}
+.countdown__period {
+  background-color: var(--first-color);
+  color: var(--body-color);
+  width: 60px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: .25rem;
+  font-size: var(--large-font-size);
+  font-weight: var(--weight-600);
+  margin-bottom: .5rem;
+}
+.unit {
+  font-size: var(--small-font-size);
+  text-align: center;
+  display: block;
+}
+.deals__btn .btn {
+  background-color: transparent;
+  color: var(--first-color);
+}
 /*=============== NEW ARRIVALS ===============*/
 
 /*=============== SHOWCASE ===============*/
