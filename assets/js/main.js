@@ -7,7 +7,16 @@
 /* Validate if constant exists */
 
 /*=============== IMAGE GALLERY ===============*/
-
+function imgGallery() { 
+  const mainImg = document.querySelector('.details__img'),
+    smallImg = document.querySelectorAll('.details__small-img');
+  smallImg.forEach((img) => {
+    img.addEventListener('click', function () {
+      mainImg.src = this.src;
+    });
+  });
+}
+imgGallery();
 /*=============== SWIPER CATEGORIES ===============*/
 var swiperProducts = new Swiper(".new__container", {
     spaceBetween: 24,
