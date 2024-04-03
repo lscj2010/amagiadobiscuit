@@ -64,11 +64,11 @@ var swiperCategories = new Swiper(".categories__container", {
     },
 });
 /*=============== PRODUCTS TABS ===============*/
-const tabs = document.querySelectorAll('[data-target]'),
+const tabs = document.querySelectorAll('[data-targent]'),
   tabContents = document.querySelectorAll('[content]');
 tabs.forEach((tab) => {
   tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.target);
+    const target = document.querySelector(tab.dataset.targent);
     tabContents.forEach((tabContent) => {
       tabContent.classList.remove('active-tab');
     });
