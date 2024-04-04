@@ -144,6 +144,18 @@ table {
   font-size: var(--small-font-size);
   text-decoration: line-through;
 }
+.form {
+  row-gap: 1rem;
+}
+.form__group {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.textarea {
+  height: 200px;
+  padding-block: 1rem;
+  resize: none;
+}
 /*=============== HEADER & NAV ===============*/
 .header__top {
   background-color: var(--first-color-alt);
@@ -906,8 +918,57 @@ table {
   padding-bottom: 3rem;
   row-gap: 1.25rem;
 }
+.review__single {
+  border-bottom: 1px solid var(--border-color-alt);
+  padding-bottom: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 1.5rem;
+}
+.review__single:last-child {
+  padding-bottom: 3rem;
+}
+.review__img {
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.review__title {
+  font-size: var(--tiny-font-size);
+}
+.review__data {
+  width: calc(100% - 94px);
+}
+.review__description {
+  margin-bottom: 0.5rem;
+}
+.review__rating {
+  color: hsl(42, 100%, 50%);
+  margin-bottom: 0.25rem;
+}
+.review__rating, .review__date {
+  font-size: var(--small-font-size);
+}
+.review__form-title {
+  tab-size: var(--large-font-size);
+  margin-bottom: 1rem;
+}
+.rate__product {
+  margin-bottom: 2rem;
+}
 /*=============== CART ===============*/
-
+.table tr {
+  border-top: 1px solid var(--border-color-alt);
+}
+.table tr:last-child {
+  border-bottom: 1px solid var(--border-color-alt);
+}
+.table tr th:nth-child(1), table tr td:nth-child(1) {
+  width: 216px;
+}
+.table tr th:nth-child(2), table tr td:nth-child(2) {
+  width: 400px;
+}
 /*=============== CART OTHERS ===============*/
 
 /*=============== WISHLIST ===============*/
